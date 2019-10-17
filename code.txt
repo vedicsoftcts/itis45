@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 this is file is edited by Sachin@example.com
 
 
 this line by latif
+=======
+this is file is edited by Sachin@example.co
+this is edited by sachin@example.com
+>>>>>>> 5cd3e9e919ef30a32753e9f829d85f1204636dc0
