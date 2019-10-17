@@ -1,0 +1,31 @@
+class vehicle:
+    def __init__(self,colour):
+        self.colour=colour
+p0=vehicle('RED')
+print('vehicle color- ',p0.colour)
+class car(vehicle):
+    def __init__(self, type, weight,year,colour):
+        self.type=type
+        vehicle.__init__(self,colour)
+        self.weight=weight
+        self.year=year
+        #print(self.type,self.colour,self.weight,self.year)
+        print('vehicle spec.')
+
+p1 = car('ALL WHEEL DRIVE','blue','1.7 T','2017')
+print('vehicle type-',p1.type)
+print('vehicle colour-',p1.colour)
+print('vehicle weight-',p1.weight)
+print('vehicle year-',p1.year)
+
+class brakes(car):
+    def __init__(self, pressure, force, colour):
+        self.pressure=pressure
+        self.force=force
+        vehicle.__init__(self,colour)
+       # print('vehicle spec.')
+p2=brakes('80Nm','907 psi','red')
+print('brake colour- ',p2.colour)
+print('brake force - ',p2.force)
+print('brake pressure -',p2.pressure)
+
